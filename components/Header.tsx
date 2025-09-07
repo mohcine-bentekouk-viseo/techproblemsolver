@@ -1,10 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { cn } from "../lib/utils";
+import { Wrench, Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -16,23 +21,53 @@ export default function Header() {
     { name: "Contact", href: "/contact" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        isScrolled
+          ? "bg-white/95 backdrop-blur-md shadow-soft border-b border-gray-100"
+          : "bg-transparent"
+      )}
+    >
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold text-primary-700">
-              Quick Solutions Hub
+            <Link href="/" className="flex items-center space-x-3">
+              <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
+                <Wrench className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-xl font-bold text-primary-700 hidden sm:block">
+                Quick Solutions Hub
+              </span>
+              <span className="text-lg font-bold text-primary-700 sm:hidden">
+                QSH
+              </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors"
+                className={cn(
+                  "px-4 py-2 rounded-lg text-sm font-medium transition-colors",
+                  pathname === item.href
+                    ? "bg-primary-100 text-primary-700"
+                    : "text-gray-600 hover:text-primary-600 hover:bg-gray-50"
+                )}
               >
                 {item.name}
               </Link>
@@ -42,47 +77,39 @@ export default function Header() {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              type="button"
-              className="text-gray-700 hover:text-primary-600 p-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-gray-50"
+              aria-label="Toggle menu"
             >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d={
-                    isMenuOpen
-                      ? "M6 18L18 6M6 6l12 12"
-                      : "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  }
-                />
-              </svg>
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 border-t border-gray-200">
+          <div className="md:hidden py-4 border-t border-gray-100">
+            <nav className="flex flex-col space-y-1">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary-600 block px-3 py-2 text-base font-medium"
+                  className={cn(
+                    "px-4 py-3 rounded-lg text-base font-medium transition-colors",
+                    pathname === item.href
+                      ? "bg-primary-100 text-primary-700"
+                      : "text-gray-600 hover:text-primary-600 hover:bg-gray-50"
+                  )}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-            </div>
+            </nav>
           </div>
         )}
       </div>
