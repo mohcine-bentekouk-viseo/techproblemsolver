@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Samsung Galaxy Guides & Reviews | Quick Solutions Hub",
+  title: "Samsung Galaxy Guides & Reviews | Tech Problem Solver",
   description:
     "Complete guides for Samsung Galaxy smartphones and tablets. Tips, tricks, and troubleshooting for Galaxy S24, S23, A series, and more.",
   keywords:

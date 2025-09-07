@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tech Blog - Device Guides & Brand Reviews | Quick Solutions Hub",
+  title: "Tech Blog - Device Guides & Brand Reviews | Tech Problem Solver",
   description:
     "Latest tech guides, device reviews, and troubleshooting tips for popular brands like Apple, Samsung, Google Pixel, OnePlus, and more.",
   keywords:

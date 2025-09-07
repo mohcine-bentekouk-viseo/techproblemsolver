@@ -8,23 +8,23 @@ import ScrollToTop from "@/components/ui/ScrollToTop";
 // Removed Inter font initialization
 
 export const metadata: Metadata = {
-  title: "Quick Solutions Hub - Tech Problems Solved",
+  title: "Tech Problem Solver - Tech Problems Solved",
   description:
     "Get quick solutions to common phone, computer, and internet problems. Expert troubleshooting guides for everyday tech issues.",
   keywords:
     "tech support, phone problems, computer issues, internet troubleshooting, tech solutions",
-  authors: [{ name: "Quick Solutions Hub" }],
+  authors: [{ name: "Tech Problem Solver" }],
   openGraph: {
-    title: "Quick Solutions Hub - Tech Problems Solved",
+    title: "Tech Problem Solver - Tech Problems Solved",
     description:
       "Get quick solutions to common phone, computer, and internet problems.",
-    url: "https://quicksolutionshub.com",
-    siteName: "Quick Solutions Hub",
+    url: "https://techproblemsolver.com",
+    siteName: "Tech Problem Solver",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quick Solutions Hub - Tech Problems Solved",
+    title: "Tech Problem Solver - Tech Problems Solved",
     description:
       "Get quick solutions to common phone, computer, and internet problems.",
   },

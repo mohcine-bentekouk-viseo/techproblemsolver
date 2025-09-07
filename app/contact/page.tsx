@@ -67,9 +67,9 @@ export default function ContactPage() {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Support",
       description: "Get detailed help via email",
-      info: "support@quicksolutionshub.com",
+      info: "support@techproblemsolver.com",
       response: "Response within 24 hours",
-      href: "mailto:support@quicksolutionshub.com",
+      href: "mailto:support@techproblemsolver.com",
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,

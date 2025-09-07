@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Quick Solutions Hub - Solve Your Tech Problems Fast",
+  title: "Tech Problem Solver - Solve Your Tech Problems Fast",
   description:
     "Get instant solutions to common phone, computer, and internet problems. Expert troubleshooting guides and step-by-step fixes for everyday tech issues.",
   keywords:

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Complete iPhone 15 Pro Max Camera Guide - Master Every Setting | Quick Solutions Hub",
+    "Complete iPhone 15 Pro Max Camera Guide - Master Every Setting | Tech Problem Solver",
   description:
     "Learn how to use every camera feature on your iPhone 15 Pro Max. Complete guide covering all modes, settings, and professional photography tips.",
   keywords:

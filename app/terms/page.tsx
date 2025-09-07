@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - Quick Solutions Hub",
+  title: "Terms of Service - Tech Problem Solver",
   description:
-    "Terms of Service and conditions for using Quick Solutions Hub website and troubleshooting guides.",
+    "Terms of Service and conditions for using Tech Problem Solver website and troubleshooting guides.",
   keywords:
     "terms of service, terms of use, website conditions, user agreement",
 };
@@ -24,7 +24,7 @@ export default function TermsPage() {
         <div className="prose prose-lg max-w-none">
           <div className="bg-blue-50 border-l-4 border-primary-600 p-6 mb-8">
             <p className="text-gray-700 font-medium">
-              By accessing and using Quick Solutions Hub, you agree to comply
+              By accessing and using Tech Problem Solver, you agree to comply
               with and be bound by the following terms and conditions. Please
               read these terms carefully before using our website.
             </p>
@@ -34,7 +34,7 @@ export default function TermsPage() {
             1. Acceptance of Terms
           </h2>
           <p className="text-gray-700 mb-6">
-            By accessing or using the Quick Solutions Hub website ("Service"),
+            By accessing or using the Tech Problem Solver website ("Service"),
             you agree to be bound by these Terms of Service ("Terms"). If you
             disagree with any part of these terms, then you may not access the
             Service.
@@ -44,7 +44,7 @@ export default function TermsPage() {
             2. Description of Service
           </h2>
           <p className="text-gray-700 mb-4">
-            Quick Solutions Hub provides troubleshooting guides and solutions
+            Tech Problem Solver provides troubleshooting guides and solutions
             for common technology problems including:
           </p>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
@@ -109,7 +109,7 @@ export default function TermsPage() {
             Limitation of Liability
           </h3>
           <p className="text-gray-700 mb-6">
-            To the maximum extent permitted by law, Quick Solutions Hub shall
+            To the maximum extent permitted by law, Tech Problem Solver shall
             not be liable for any damages resulting from your use of our website
             or following our troubleshooting guides, including but not limited
             to device damage, data loss, or other consequential damages.
@@ -123,7 +123,7 @@ export default function TermsPage() {
             Our Content
           </h3>
           <p className="text-gray-700 mb-4">
-            All content on Quick Solutions Hub, including text, graphics, logos,
+            All content on Tech Problem Solver, including text, graphics, logos,
             and software, is our property or the property of our content
             suppliers and is protected by intellectual property laws.
           </p>
@@ -234,7 +234,7 @@ export default function TermsPage() {
           </p>
           <div className="bg-gray-50 rounded-lg p-6">
             <p className="text-gray-700">
-              <strong>Email:</strong> legal@quicksolutionshub.com
+              <strong>Email:</strong> legal@techproblemsolver.com
               <br />
               <strong>Website:</strong>{" "}
               <a

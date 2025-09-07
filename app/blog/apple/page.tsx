@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Apple iPhone & iPad Guides | Quick Solutions Hub",
+  title: "Apple iPhone & iPad Guides | Tech Problem Solver",
   description:
     "Complete guides, tips, and troubleshooting for Apple iPhone, iPad, Mac, and Apple Watch. From iPhone 15 to older models.",
   keywords:

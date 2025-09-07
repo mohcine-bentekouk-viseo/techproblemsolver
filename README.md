@@ -1,4 +1,4 @@
-# Quick Solutions Hub
+# Tech Problem Solver
 
 A modern Next.js website designed to solve everyday tech problems for phones, computers, and internet issues. Built with AdSense approval optimization in mind.
 
