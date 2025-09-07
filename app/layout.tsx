@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// Removed Inter font import
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
-const inter = Inter({ subsets: ["latin"] });
+// Removed Inter font initialization
 
 export const metadata: Metadata = {
   title: "Quick Solutions Hub - Tech Problems Solved",
@@ -35,11 +36,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
+    <html lang="en" className="scroll-smooth">
+      <body className="min-h-screen flex flex-col antialiased">
+        <a href="#main-content" className="skip-to-content">
+          Skip to main content
+        </a>
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main id="main-content" className="flex-grow pt-16">
+          {children}
+        </main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
