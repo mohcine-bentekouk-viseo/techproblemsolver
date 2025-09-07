@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Quick Solutions Hub",
+  title: "Privacy Policy - Tech Problem Solver",
   description:
-    "Privacy Policy for Quick Solutions Hub including information about data collection, cookies, advertising, and your privacy rights.",
+    "Privacy Policy for Tech Problem Solver including information about data collection, cookies, advertising, and your privacy rights.",
   keywords:
     "privacy policy, data protection, cookies, advertising, GDPR compliance",
 };
@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
         <div className="prose prose-lg max-w-none">
           <div className="bg-blue-50 border-l-4 border-primary-600 p-6 mb-8">
             <p className="text-gray-700 font-medium">
-              This Privacy Policy explains how Quick Solutions Hub collects,
+              This Privacy Policy explains how Tech Problem Solver collects,
               uses, and protects your information when you visit our website and
               use our services.
             </p>
@@ -298,7 +298,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <div className="bg-gray-50 rounded-lg p-6">
             <p className="text-gray-700">
-              <strong>Email:</strong> privacy@quicksolutionshub.com
+              <strong>Email:</strong> privacy@techproblemsolver.com
               <br />
               <strong>Website:</strong>{" "}
               <a

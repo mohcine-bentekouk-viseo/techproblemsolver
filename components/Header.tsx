@@ -48,7 +48,7 @@ export default function Header() {
                 <Wrench className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold text-primary-700 hidden sm:block">
-                Quick Solutions Hub
+                Tech Problem Solver
               </span>
               <span className="text-lg font-bold text-primary-700 sm:hidden">
                 QSH

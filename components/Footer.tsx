@@ -77,7 +77,7 @@ export default function Footer() {
                   <Wrench className="w-4 h-4 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">
-                  Quick Solutions Hub
+                  Tech Problem Solver
                 </h3>
               </div>
               <p className="text-gray-600 text-sm mb-6 max-w-md">
@@ -215,7 +215,7 @@ export default function Footer() {
         <div className="border-t border-gray-300 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="flex items-center space-x-4 text-sm text-gray-600">
-              <span>© {new Date().getFullYear()} Quick Solutions Hub</span>
+              <span>© {new Date().getFullYear()} Tech Problem Solver</span>
               <span className="hidden sm:inline">•</span>
               <span className="hidden sm:inline">All rights reserved</span>
             </div>

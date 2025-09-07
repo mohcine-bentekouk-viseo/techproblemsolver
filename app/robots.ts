@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/", "/admin/"],
     },
-    sitemap: "https://quicksolutionshub.com/sitemap.xml",
-    host: "https://quicksolutionshub.com",
+    sitemap: "https://techproblemsolver.com/sitemap.xml",
+    host: "https://techproblemsolver.com",
   };
 }
